@@ -451,6 +451,115 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 1
   m_SpriteSortPoint: 0
+--- !u!1 &91909475
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 91909478}
+  - component: {fileID: 91909477}
+  - component: {fileID: 91909476}
+  m_Layer: 0
+  m_Name: background1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &91909476
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91909475}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 8.15, y: 6.03}
+    newSize: {x: 8.15, y: 6.03}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 8.15, y: 6.03}
+  m_EdgeRadius: 0
+--- !u!212 &91909477
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91909475}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: -2
+  m_Sprite: {fileID: 21300000, guid: 07161b4c28c9a36479ec2a77865cb120, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 8.15, y: 6.03}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &91909478
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91909475}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.45, y: -0.12, z: 0.89}
+  m_LocalScale: {x: 2.6257162, y: 2.6085, z: 2.6085}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 40
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &123434545
 GameObject:
   m_ObjectHideFlags: 0
@@ -464,6 +573,7 @@ GameObject:
   - component: {fileID: 123434546}
   - component: {fileID: 123434550}
   - component: {fileID: 123434549}
+  - component: {fileID: 123434551}
   m_Layer: 0
   m_Name: Piece (35)
   m_TagString: PuzzleTag
@@ -621,9 +731,23 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 123434545}
   m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -81245435
+  m_SortingLayer: 1
   m_SortingOrder: 0
+--- !u!114 &123434551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 123434545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d640f7770b7c9734b9a7ce5671ffc5bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InRightPosition: 0
+  Selected: 0
 --- !u!1 &170857995
 GameObject:
   m_ObjectHideFlags: 0
@@ -637,6 +761,7 @@ GameObject:
   - component: {fileID: 170857996}
   - component: {fileID: 170858000}
   - component: {fileID: 170857999}
+  - component: {fileID: 170858001}
   m_Layer: 0
   m_Name: Piece (14)
   m_TagString: PuzzleTag
@@ -794,9 +919,23 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 170857995}
   m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -81245435
+  m_SortingLayer: 1
   m_SortingOrder: 0
+--- !u!114 &170858001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170857995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d640f7770b7c9734b9a7ce5671ffc5bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InRightPosition: 0
+  Selected: 0
 --- !u!1 &254278193
 GameObject:
   m_ObjectHideFlags: 0
@@ -892,6 +1031,7 @@ GameObject:
   - component: {fileID: 341310217}
   - component: {fileID: 341310221}
   - component: {fileID: 341310220}
+  - component: {fileID: 341310222}
   m_Layer: 0
   m_Name: Piece (33)
   m_TagString: PuzzleTag
@@ -1049,9 +1189,23 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 341310216}
   m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -81245435
+  m_SortingLayer: 1
   m_SortingOrder: 0
+--- !u!114 &341310222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341310216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d640f7770b7c9734b9a7ce5671ffc5bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InRightPosition: 0
+  Selected: 0
 --- !u!1 &386396908
 GameObject:
   m_ObjectHideFlags: 0
@@ -1065,6 +1219,7 @@ GameObject:
   - component: {fileID: 386396909}
   - component: {fileID: 386396913}
   - component: {fileID: 386396912}
+  - component: {fileID: 386396914}
   m_Layer: 0
   m_Name: Piece (1)
   m_TagString: PuzzleTag
@@ -1222,9 +1377,23 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 386396908}
   m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -81245435
+  m_SortingLayer: 1
   m_SortingOrder: 0
+--- !u!114 &386396914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386396908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d640f7770b7c9734b9a7ce5671ffc5bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InRightPosition: 0
+  Selected: 0
 --- !u!1 &388555658
 GameObject:
   m_ObjectHideFlags: 0
@@ -1402,6 +1571,7 @@ GameObject:
   - component: {fileID: 420651576}
   - component: {fileID: 420651580}
   - component: {fileID: 420651579}
+  - component: {fileID: 420651581}
   m_Layer: 0
   m_Name: Piece (9)
   m_TagString: PuzzleTag
@@ -1559,9 +1729,23 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 420651575}
   m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -81245435
+  m_SortingLayer: 1
   m_SortingOrder: 0
+--- !u!114 &420651581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 420651575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d640f7770b7c9734b9a7ce5671ffc5bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InRightPosition: 0
+  Selected: 0
 --- !u!1 &469378151
 GameObject:
   m_ObjectHideFlags: 0
@@ -1657,6 +1841,7 @@ GameObject:
   - component: {fileID: 516633650}
   - component: {fileID: 516633654}
   - component: {fileID: 516633653}
+  - component: {fileID: 516633655}
   m_Layer: 0
   m_Name: Piece (20)
   m_TagString: PuzzleTag
@@ -1814,9 +1999,23 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 516633649}
   m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -81245435
+  m_SortingLayer: 1
   m_SortingOrder: 0
+--- !u!114 &516633655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516633649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d640f7770b7c9734b9a7ce5671ffc5bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InRightPosition: 0
+  Selected: 0
 --- !u!1 &563133568
 GameObject:
   m_ObjectHideFlags: 0
@@ -1912,6 +2111,7 @@ GameObject:
   - component: {fileID: 567374057}
   - component: {fileID: 567374061}
   - component: {fileID: 567374060}
+  - component: {fileID: 567374062}
   m_Layer: 0
   m_Name: Piece (25)
   m_TagString: PuzzleTag
@@ -2069,9 +2269,23 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 567374056}
   m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -81245435
+  m_SortingLayer: 1
   m_SortingOrder: 0
+--- !u!114 &567374062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567374056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d640f7770b7c9734b9a7ce5671ffc5bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InRightPosition: 0
+  Selected: 0
 --- !u!1 &602393435
 GameObject:
   m_ObjectHideFlags: 0
@@ -2167,6 +2381,7 @@ GameObject:
   - component: {fileID: 622515604}
   - component: {fileID: 622515608}
   - component: {fileID: 622515607}
+  - component: {fileID: 622515609}
   m_Layer: 0
   m_Name: Piece (11)
   m_TagString: PuzzleTag
@@ -2324,9 +2539,23 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 622515603}
   m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -81245435
+  m_SortingLayer: 1
   m_SortingOrder: 0
+--- !u!114 &622515609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622515603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d640f7770b7c9734b9a7ce5671ffc5bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InRightPosition: 0
+  Selected: 0
 --- !u!1 &671078800
 GameObject:
   m_ObjectHideFlags: 0
@@ -2422,6 +2651,7 @@ GameObject:
   - component: {fileID: 702777737}
   - component: {fileID: 702777741}
   - component: {fileID: 702777740}
+  - component: {fileID: 702777742}
   m_Layer: 0
   m_Name: Piece (8)
   m_TagString: PuzzleTag
@@ -2579,9 +2809,23 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 702777736}
   m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -81245435
+  m_SortingLayer: 1
   m_SortingOrder: 0
+--- !u!114 &702777742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 702777736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d640f7770b7c9734b9a7ce5671ffc5bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InRightPosition: 0
+  Selected: 0
 --- !u!1 &704603804
 GameObject:
   m_ObjectHideFlags: 0
@@ -2770,6 +3014,7 @@ GameObject:
   - component: {fileID: 740792285}
   - component: {fileID: 740792289}
   - component: {fileID: 740792288}
+  - component: {fileID: 740792290}
   m_Layer: 0
   m_Name: Piece (4)
   m_TagString: PuzzleTag
@@ -2927,9 +3172,23 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 740792284}
   m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -81245435
+  m_SortingLayer: 1
   m_SortingOrder: 0
+--- !u!114 &740792290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 740792284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d640f7770b7c9734b9a7ce5671ffc5bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InRightPosition: 0
+  Selected: 0
 --- !u!1 &782391608
 GameObject:
   m_ObjectHideFlags: 0
@@ -2943,6 +3202,7 @@ GameObject:
   - component: {fileID: 782391609}
   - component: {fileID: 782391613}
   - component: {fileID: 782391612}
+  - component: {fileID: 782391614}
   m_Layer: 0
   m_Name: Piece (31)
   m_TagString: PuzzleTag
@@ -3100,9 +3360,23 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 782391608}
   m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -81245435
+  m_SortingLayer: 1
   m_SortingOrder: 0
+--- !u!114 &782391614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 782391608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d640f7770b7c9734b9a7ce5671ffc5bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InRightPosition: 0
+  Selected: 0
 --- !u!1 &819098249
 GameObject:
   m_ObjectHideFlags: 0
@@ -3116,6 +3390,7 @@ GameObject:
   - component: {fileID: 819098250}
   - component: {fileID: 819098254}
   - component: {fileID: 819098253}
+  - component: {fileID: 819098255}
   m_Layer: 0
   m_Name: Piece (22)
   m_TagString: PuzzleTag
@@ -3273,9 +3548,23 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 819098249}
   m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -81245435
+  m_SortingLayer: 1
   m_SortingOrder: 0
+--- !u!114 &819098255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 819098249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d640f7770b7c9734b9a7ce5671ffc5bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InRightPosition: 0
+  Selected: 0
 --- !u!1 &825231869
 GameObject:
   m_ObjectHideFlags: 0
@@ -3371,6 +3660,7 @@ GameObject:
   - component: {fileID: 852659200}
   - component: {fileID: 852659204}
   - component: {fileID: 852659203}
+  - component: {fileID: 852659205}
   m_Layer: 0
   m_Name: Piece (30)
   m_TagString: PuzzleTag
@@ -3528,9 +3818,23 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 852659199}
   m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -81245435
+  m_SortingLayer: 1
   m_SortingOrder: 0
+--- !u!114 &852659205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 852659199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d640f7770b7c9734b9a7ce5671ffc5bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InRightPosition: 0
+  Selected: 0
 --- !u!1 &872594768
 GameObject:
   m_ObjectHideFlags: 0
@@ -3544,6 +3848,7 @@ GameObject:
   - component: {fileID: 872594769}
   - component: {fileID: 872594773}
   - component: {fileID: 872594772}
+  - component: {fileID: 872594774}
   m_Layer: 0
   m_Name: Piece (18)
   m_TagString: PuzzleTag
@@ -3701,9 +4006,23 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 872594768}
   m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -81245435
+  m_SortingLayer: 1
   m_SortingOrder: 0
+--- !u!114 &872594774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872594768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d640f7770b7c9734b9a7ce5671ffc5bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InRightPosition: 0
+  Selected: 0
 --- !u!1 &873922236
 GameObject:
   m_ObjectHideFlags: 0
@@ -3717,6 +4036,7 @@ GameObject:
   - component: {fileID: 873922237}
   - component: {fileID: 873922241}
   - component: {fileID: 873922240}
+  - component: {fileID: 873922242}
   m_Layer: 0
   m_Name: Piece (26)
   m_TagString: PuzzleTag
@@ -3874,9 +4194,23 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 873922236}
   m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -81245435
+  m_SortingLayer: 1
   m_SortingOrder: 0
+--- !u!114 &873922242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 873922236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d640f7770b7c9734b9a7ce5671ffc5bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InRightPosition: 0
+  Selected: 0
 --- !u!1 &876278825
 GameObject:
   m_ObjectHideFlags: 0
@@ -3890,6 +4224,7 @@ GameObject:
   - component: {fileID: 876278826}
   - component: {fileID: 876278830}
   - component: {fileID: 876278829}
+  - component: {fileID: 876278831}
   m_Layer: 0
   m_Name: Piece (23)
   m_TagString: PuzzleTag
@@ -4047,9 +4382,105 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 876278825}
   m_Enabled: 1
+  m_SortingLayerID: -81245435
+  m_SortingLayer: 1
+  m_SortingOrder: 0
+--- !u!114 &876278831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876278825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d640f7770b7c9734b9a7ce5671ffc5bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InRightPosition: 0
+  Selected: 0
+--- !u!1 &906279621
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 906279623}
+  - component: {fileID: 906279622}
+  m_Layer: 0
+  m_Name: Puzzle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &906279622
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 906279621}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 5bc08ea01ed8cba4a8463a05005c140b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5176471}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 10.24, y: 10.24}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &906279623
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 906279621}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.03, y: 0.86, z: 0.27}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 39
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &932448696
 GameObject:
   m_ObjectHideFlags: 0
@@ -4145,6 +4576,7 @@ GameObject:
   - component: {fileID: 953951628}
   - component: {fileID: 953951632}
   - component: {fileID: 953951631}
+  - component: {fileID: 953951633}
   m_Layer: 0
   m_Name: Piece (29)
   m_TagString: PuzzleTag
@@ -4302,9 +4734,23 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 953951627}
   m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -81245435
+  m_SortingLayer: 1
   m_SortingOrder: 0
+--- !u!114 &953951633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953951627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d640f7770b7c9734b9a7ce5671ffc5bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InRightPosition: 0
+  Selected: 0
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -4415,6 +4861,7 @@ GameObject:
   - component: {fileID: 964612661}
   - component: {fileID: 964612665}
   - component: {fileID: 964612664}
+  - component: {fileID: 964612666}
   m_Layer: 0
   m_Name: Piece (10)
   m_TagString: PuzzleTag
@@ -4572,9 +5019,23 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 964612660}
   m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -81245435
+  m_SortingLayer: 1
   m_SortingOrder: 0
+--- !u!114 &964612666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964612660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d640f7770b7c9734b9a7ce5671ffc5bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InRightPosition: 0
+  Selected: 0
 --- !u!1 &1018643182
 GameObject:
   m_ObjectHideFlags: 0
@@ -4588,6 +5049,7 @@ GameObject:
   - component: {fileID: 1018643183}
   - component: {fileID: 1018643187}
   - component: {fileID: 1018643186}
+  - component: {fileID: 1018643188}
   m_Layer: 0
   m_Name: Piece (19)
   m_TagString: PuzzleTag
@@ -4745,9 +5207,23 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1018643182}
   m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -81245435
+  m_SortingLayer: 1
   m_SortingOrder: 0
+--- !u!114 &1018643188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1018643182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d640f7770b7c9734b9a7ce5671ffc5bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InRightPosition: 0
+  Selected: 0
 --- !u!1 &1049423948
 GameObject:
   m_ObjectHideFlags: 0
@@ -4843,6 +5319,7 @@ GameObject:
   - component: {fileID: 1051326207}
   - component: {fileID: 1051326211}
   - component: {fileID: 1051326210}
+  - component: {fileID: 1051326212}
   m_Layer: 0
   m_Name: Piece (6)
   m_TagString: PuzzleTag
@@ -5000,9 +5477,23 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1051326206}
   m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -81245435
+  m_SortingLayer: 1
   m_SortingOrder: 0
+--- !u!114 &1051326212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1051326206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d640f7770b7c9734b9a7ce5671ffc5bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InRightPosition: 0
+  Selected: 0
 --- !u!1 &1079534084
 GameObject:
   m_ObjectHideFlags: 0
@@ -5016,6 +5507,7 @@ GameObject:
   - component: {fileID: 1079534085}
   - component: {fileID: 1079534089}
   - component: {fileID: 1079534088}
+  - component: {fileID: 1079534090}
   m_Layer: 0
   m_Name: Piece (2)
   m_TagString: PuzzleTag
@@ -5173,9 +5665,23 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1079534084}
   m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -81245435
+  m_SortingLayer: 1
   m_SortingOrder: 0
+--- !u!114 &1079534090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079534084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d640f7770b7c9734b9a7ce5671ffc5bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InRightPosition: 0
+  Selected: 0
 --- !u!1 &1089432736
 GameObject:
   m_ObjectHideFlags: 0
@@ -5353,6 +5859,7 @@ GameObject:
   - component: {fileID: 1117129869}
   - component: {fileID: 1117129873}
   - component: {fileID: 1117129872}
+  - component: {fileID: 1117129874}
   m_Layer: 0
   m_Name: Piece (32)
   m_TagString: PuzzleTag
@@ -5510,9 +6017,23 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1117129868}
   m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -81245435
+  m_SortingLayer: 1
   m_SortingOrder: 0
+--- !u!114 &1117129874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117129868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d640f7770b7c9734b9a7ce5671ffc5bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InRightPosition: 0
+  Selected: 0
 --- !u!1 &1132845944
 GameObject:
   m_ObjectHideFlags: 0
@@ -5595,6 +6116,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 1
   m_SpriteSortPoint: 0
+--- !u!1 &1186067692
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1186067693}
+  m_Layer: 0
+  m_Name: TestPositionObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1186067693
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186067692}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.13, y: 3.21, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 38
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1223960886
 GameObject:
   m_ObjectHideFlags: 0
@@ -5608,6 +6159,7 @@ GameObject:
   - component: {fileID: 1223960887}
   - component: {fileID: 1223960891}
   - component: {fileID: 1223960890}
+  - component: {fileID: 1223960892}
   m_Layer: 0
   m_Name: Piece (0)
   m_TagString: PuzzleTag
@@ -5765,9 +6317,23 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1223960886}
   m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -81245435
+  m_SortingLayer: 1
   m_SortingOrder: 0
+--- !u!114 &1223960892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1223960886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d640f7770b7c9734b9a7ce5671ffc5bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InRightPosition: 0
+  Selected: 0
 --- !u!1 &1227132912
 GameObject:
   m_ObjectHideFlags: 0
@@ -5781,6 +6347,7 @@ GameObject:
   - component: {fileID: 1227132913}
   - component: {fileID: 1227132917}
   - component: {fileID: 1227132916}
+  - component: {fileID: 1227132918}
   m_Layer: 0
   m_Name: Piece (3)
   m_TagString: PuzzleTag
@@ -5938,9 +6505,23 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1227132912}
   m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -81245435
+  m_SortingLayer: 1
   m_SortingOrder: 0
+--- !u!114 &1227132918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1227132912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d640f7770b7c9734b9a7ce5671ffc5bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InRightPosition: 0
+  Selected: 0
 --- !u!1 &1256389073
 GameObject:
   m_ObjectHideFlags: 0
@@ -5954,6 +6535,7 @@ GameObject:
   - component: {fileID: 1256389074}
   - component: {fileID: 1256389078}
   - component: {fileID: 1256389077}
+  - component: {fileID: 1256389079}
   m_Layer: 0
   m_Name: Piece (5)
   m_TagString: PuzzleTag
@@ -6111,9 +6693,23 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1256389073}
   m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -81245435
+  m_SortingLayer: 1
   m_SortingOrder: 0
+--- !u!114 &1256389079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256389073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d640f7770b7c9734b9a7ce5671ffc5bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InRightPosition: 0
+  Selected: 0
 --- !u!1 &1306030501
 GameObject:
   m_ObjectHideFlags: 0
@@ -6127,6 +6723,7 @@ GameObject:
   - component: {fileID: 1306030502}
   - component: {fileID: 1306030506}
   - component: {fileID: 1306030505}
+  - component: {fileID: 1306030507}
   m_Layer: 0
   m_Name: Piece (27)
   m_TagString: PuzzleTag
@@ -6284,9 +6881,23 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1306030501}
   m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -81245435
+  m_SortingLayer: 1
   m_SortingOrder: 0
+--- !u!114 &1306030507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1306030501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d640f7770b7c9734b9a7ce5671ffc5bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InRightPosition: 0
+  Selected: 0
 --- !u!1 &1308306899
 GameObject:
   m_ObjectHideFlags: 0
@@ -6382,6 +6993,7 @@ GameObject:
   - component: {fileID: 1310543547}
   - component: {fileID: 1310543551}
   - component: {fileID: 1310543550}
+  - component: {fileID: 1310543552}
   m_Layer: 0
   m_Name: Piece (28)
   m_TagString: PuzzleTag
@@ -6539,9 +7151,23 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1310543546}
   m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -81245435
+  m_SortingLayer: 1
   m_SortingOrder: 0
+--- !u!114 &1310543552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1310543546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d640f7770b7c9734b9a7ce5671ffc5bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InRightPosition: 0
+  Selected: 0
 --- !u!1 &1416851371
 GameObject:
   m_ObjectHideFlags: 0
@@ -6719,6 +7345,7 @@ GameObject:
   - component: {fileID: 1471062389}
   - component: {fileID: 1471062393}
   - component: {fileID: 1471062392}
+  - component: {fileID: 1471062394}
   m_Layer: 0
   m_Name: Piece (16)
   m_TagString: PuzzleTag
@@ -6876,9 +7503,23 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1471062388}
   m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -81245435
+  m_SortingLayer: 1
   m_SortingOrder: 0
+--- !u!114 &1471062394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1471062388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d640f7770b7c9734b9a7ce5671ffc5bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InRightPosition: 0
+  Selected: 0
 --- !u!1 &1481165581
 GameObject:
   m_ObjectHideFlags: 0
@@ -7220,6 +7861,7 @@ GameObject:
   - component: {fileID: 1652492627}
   - component: {fileID: 1652492631}
   - component: {fileID: 1652492630}
+  - component: {fileID: 1652492632}
   m_Layer: 0
   m_Name: Piece (24)
   m_TagString: PuzzleTag
@@ -7377,9 +8019,23 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1652492626}
   m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -81245435
+  m_SortingLayer: 1
   m_SortingOrder: 0
+--- !u!114 &1652492632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1652492626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d640f7770b7c9734b9a7ce5671ffc5bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InRightPosition: 0
+  Selected: 0
 --- !u!1 &1657146203
 GameObject:
   m_ObjectHideFlags: 0
@@ -7475,6 +8131,7 @@ GameObject:
   - component: {fileID: 1700059335}
   - component: {fileID: 1700059339}
   - component: {fileID: 1700059338}
+  - component: {fileID: 1700059340}
   m_Layer: 0
   m_Name: Piece (15)
   m_TagString: PuzzleTag
@@ -7632,9 +8289,23 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1700059334}
   m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -81245435
+  m_SortingLayer: 1
   m_SortingOrder: 0
+--- !u!114 &1700059340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1700059334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d640f7770b7c9734b9a7ce5671ffc5bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InRightPosition: 0
+  Selected: 0
 --- !u!1 &1707348409
 GameObject:
   m_ObjectHideFlags: 0
@@ -7894,6 +8565,7 @@ GameObject:
   - component: {fileID: 1834730414}
   - component: {fileID: 1834730418}
   - component: {fileID: 1834730417}
+  - component: {fileID: 1834730419}
   m_Layer: 0
   m_Name: Piece (34)
   m_TagString: PuzzleTag
@@ -8051,9 +8723,23 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1834730413}
   m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -81245435
+  m_SortingLayer: 1
   m_SortingOrder: 0
+--- !u!114 &1834730419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1834730413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d640f7770b7c9734b9a7ce5671ffc5bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InRightPosition: 0
+  Selected: 0
 --- !u!1 &1835257621
 GameObject:
   m_ObjectHideFlags: 0
@@ -8067,6 +8753,7 @@ GameObject:
   - component: {fileID: 1835257622}
   - component: {fileID: 1835257626}
   - component: {fileID: 1835257625}
+  - component: {fileID: 1835257627}
   m_Layer: 0
   m_Name: Piece (12)
   m_TagString: PuzzleTag
@@ -8224,9 +8911,23 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1835257621}
   m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -81245435
+  m_SortingLayer: 1
   m_SortingOrder: 0
+--- !u!114 &1835257627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835257621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d640f7770b7c9734b9a7ce5671ffc5bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InRightPosition: 0
+  Selected: 0
 --- !u!1 &1888732272
 GameObject:
   m_ObjectHideFlags: 0
@@ -8404,6 +9105,7 @@ GameObject:
   - component: {fileID: 1919971180}
   - component: {fileID: 1919971184}
   - component: {fileID: 1919971183}
+  - component: {fileID: 1919971185}
   m_Layer: 0
   m_Name: Piece (13)
   m_TagString: PuzzleTag
@@ -8561,9 +9263,23 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1919971179}
   m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -81245435
+  m_SortingLayer: 1
   m_SortingOrder: 0
+--- !u!114 &1919971185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919971179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d640f7770b7c9734b9a7ce5671ffc5bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InRightPosition: 0
+  Selected: 0
 --- !u!1 &1920685941
 GameObject:
   m_ObjectHideFlags: 0
@@ -8741,6 +9457,7 @@ GameObject:
   - component: {fileID: 1968092255}
   - component: {fileID: 1968092259}
   - component: {fileID: 1968092258}
+  - component: {fileID: 1968092260}
   m_Layer: 0
   m_Name: Piece (7)
   m_TagString: PuzzleTag
@@ -8898,9 +9615,23 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1968092254}
   m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -81245435
+  m_SortingLayer: 1
   m_SortingOrder: 0
+--- !u!114 &1968092260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1968092254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d640f7770b7c9734b9a7ce5671ffc5bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InRightPosition: 0
+  Selected: 0
 --- !u!1 &1972820395
 GameObject:
   m_ObjectHideFlags: 0
@@ -8996,6 +9727,7 @@ GameObject:
   - component: {fileID: 2043627185}
   - component: {fileID: 2043627189}
   - component: {fileID: 2043627188}
+  - component: {fileID: 2043627190}
   m_Layer: 0
   m_Name: Piece (21)
   m_TagString: PuzzleTag
@@ -9153,9 +9885,23 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2043627184}
   m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -81245435
+  m_SortingLayer: 1
   m_SortingOrder: 0
+--- !u!114 &2043627190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043627184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d640f7770b7c9734b9a7ce5671ffc5bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InRightPosition: 0
+  Selected: 0
 --- !u!1 &2090173858
 GameObject:
   m_ObjectHideFlags: 0
@@ -9251,6 +9997,7 @@ GameObject:
   - component: {fileID: 2121126406}
   - component: {fileID: 2121126410}
   - component: {fileID: 2121126409}
+  - component: {fileID: 2121126411}
   m_Layer: 0
   m_Name: Piece (17)
   m_TagString: PuzzleTag
@@ -9408,9 +10155,23 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2121126405}
   m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -81245435
+  m_SortingLayer: 1
   m_SortingOrder: 0
+--- !u!114 &2121126411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121126405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d640f7770b7c9734b9a7ce5671ffc5bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InRightPosition: 0
+  Selected: 0
 --- !u!1 &2139424076
 GameObject:
   m_ObjectHideFlags: 0

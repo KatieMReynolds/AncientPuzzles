@@ -5,28 +5,43 @@ using UnityEngine.Rendering;
 
 public class DragAndDrop : MonoBehaviour
 {
-    public GameObject SelectedPiece;
-    int OIL = 1; //order in layer
+    public GameObject SelectedPiece; //1
+    int OIL = 1; //3 - order in layer - for moving pieces on top when selected
 
-    //Start is enabled before any Update methods and called only once
     void Start()
     {
     }
-    //Update is called every frame
+
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0)) //1
         {
-            RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
-            if (hit.transform.CompareTag("PuzzleTag"))
+            RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero); //1
+            if (hit.transform.CompareTag("PuzzleTag")) //1
             {
-                SelectedPiece = hit.transform.gameObject;
+                if (!hit.transform.GetComponent<PiecesScript>().InRightPosition) //2 - Locks pieces in place
+                {
+                    SelectedPiece = hit.transform.gameObject; //1
+                    SelectedPiece.GetComponent<PiecesScript>().Selected = true; //2 - this fixes weird placing issue
+                    SelectedPiece.GetComponent<SortingGroup>().sortingOrder = OIL; //3
+                    OIL++; //3
+                }
             }
         }
 
-        if (SelectedPiece != null)
+        if (Input.GetMouseButtonUp(0)) //1
         {
-            SelectedPiece.transform.position = new Vector3(Mouse)
+            if (SelectedPiece != null) //3 - removes an error
+            {
+                SelectedPiece.GetComponent<PiecesScript>().Selected = false; //2 - goes with line 25
+                SelectedPiece = null; //1
+            }
+            
+        }
+        if (SelectedPiece != null) //1
+        {
+            Vector3 MousePoint = Camera.main.ScreenToWorldPoint(Input.mousePosition); //1
+            SelectedPiece.transform.position = new Vector3(MousePoint.x, MousePoint.y, 0); //1
         }
     }
 }
