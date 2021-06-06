@@ -5,8 +5,11 @@ using UnityEngine.Rendering;
 
 public class DragAndDrop : MonoBehaviour
 {
+    public GameObject EndPanel;
     public GameObject SelectedPiece; //1
     int OIL = 1; //3 - order in layer - for moving pieces on top when selected
+    public int PlacedPieces = 0;
+
 
     void Start()
     {
@@ -42,6 +45,10 @@ public class DragAndDrop : MonoBehaviour
         {
             Vector3 MousePoint = Camera.main.ScreenToWorldPoint(Input.mousePosition); //1
             SelectedPiece.transform.position = new Vector3(MousePoint.x, MousePoint.y, 0); //1
+        }
+        if (PlacedPieces == 36)
+        {
+            EndPanel.SetActive(true);
         }
     }
 }

@@ -28,8 +28,13 @@ public class PiecesScript : MonoBehaviour
                     transform.position = RightPosition; //1
                     InRightPosition = true; //2
                     GetComponent<SortingGroup>().sortingOrder = 0; //3
+
+                    Camera.main.GetComponent<DragAndDrop>().PlacedPieces++;
                 }
             }
+
         }
+
+        
     }
 }
