@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class PuzzleSelect : MonoBehaviour
 {
     public GameObject StartPanel;
+    public GameObject EndPanel;
     public GameObject BackButton1;
     public GameObject BackButton2;
     //StartPanel is not a panel, but the image background renamed
@@ -17,8 +18,8 @@ public class PuzzleSelect : MonoBehaviour
             GameObject.Find("Piece (" + i + ")").transform.Find("Puzzle").GetComponent<SpriteRenderer>().sprite = Photo.sprite;
         }
         StartPanel.SetActive(false);
-        BackButton1.SetActive(false);
-        BackButton2.SetActive(true);
+        //BackButton1.SetActive(false);
+        //BackButton2.SetActive(true);
         
     }
 
@@ -33,6 +34,8 @@ public class PuzzleSelect : MonoBehaviour
     {
         Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);
+        StartPanel.SetActive(true);
+        EndPanel.SetActive(false);
 
     }
 }

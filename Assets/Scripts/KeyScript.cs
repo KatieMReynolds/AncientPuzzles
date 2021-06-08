@@ -16,13 +16,13 @@ public class KeyScript : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown("space"))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             HintPanel.SetActive(true);
         }
-        if (Input.GetKeyUp("space"))
-        {
-            HintPanel.SetActive(false);
-        }
+        //if (Input.GetKeyUp("space"))
+        //{
+        //    HintPanel.SetActive(false);
+        //}
     }
 }

@@ -7,6 +7,7 @@ public class DragAndDrop : MonoBehaviour
 {
     public GameObject EndPanel;
     public GameObject SelectedPiece; //1
+    public GameObject BackButton2;
     int OIL = 1; //3 - order in layer - for moving pieces on top when selected
     public int PlacedPieces = 0;
 
@@ -49,6 +50,7 @@ public class DragAndDrop : MonoBehaviour
         if (PlacedPieces == 36)
         {
             EndPanel.SetActive(true);
+            //BackButton2.SetActive(false);
         }
     }
 }
