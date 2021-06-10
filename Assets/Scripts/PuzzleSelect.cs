@@ -12,6 +12,7 @@ public class PuzzleSelect : MonoBehaviour
     public GameObject BackButton2;
     public GameObject HintImage;
     //StartPanel is not a panel, but the image background renamed
+
     public void SetPuzzlesPhoto(Image Photo)
     {
         for (int i = 0; i < 36; i++)
@@ -37,9 +38,7 @@ public class PuzzleSelect : MonoBehaviour
 
     public void BackSelect()
     {
-        //StartPanel.SetActive(true);//BackButton1.SetActive(true);//BackButton2.SetActive(false);
-        
-        //This fixes the puzzle piecees not resetting when loading a new puzzle, just resets the whole scene
+
     }
 
 }
